@@ -138,9 +138,7 @@ alias lcs=clear
 alias clera=clear
 alias sl=ls
 alias eixt=exit
-alias c=clear
 alias cs=clear
-alias l=ls
 
 # tmux
 alias tn='tmux new -s'
