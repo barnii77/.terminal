@@ -140,6 +140,15 @@ alias sl=ls
 alias eixt=exit
 alias cs=clear
 
+# cursor
+cur-line() {
+  printf '\033[6 q'
+}
+
+cur-block() {
+  printf '\033[2 q'
+}
+
 # tmux
 alias tn='tmux new -s'
 alias ta='tmux a -t'
