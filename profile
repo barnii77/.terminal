@@ -31,3 +31,12 @@ fi
 
 # create openai api key env var
 . "$HOME/.terminal/.bash_openai_api_key"
+
+# Create a tmux session on startup
+if [ -z "$ONROOTSHELLINIT" ]; then
+  # create env var to avoid recursion
+  export ONROOTSHELLINIT=1
+  # launch with env var inheritance
+  # NOTE: will launch with name 0 regardless of specified name
+  tmux -L 0
+fi
