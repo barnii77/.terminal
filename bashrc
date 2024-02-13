@@ -141,11 +141,11 @@ alias eixt=exit
 alias cs=clear
 
 # cursor
-cur-line() {
+cul() {
   printf '\033[6 q'
 }
 
-cur-block() {
+cub() {
   printf '\033[2 q'
 }
 
