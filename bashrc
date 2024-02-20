@@ -129,6 +129,8 @@ alias vim=lvim
 alias v=lvim
 # NOTE: add openai api key
 
+alias brew=/home/linuxbrew/.linuxbrew/bin/brew
+
 # typo aliases
 alias cls=clear
 alias csl=clear
