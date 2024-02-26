@@ -26,8 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Cargo
+# cargo (Rust)
 . "$HOME/.cargo/env"
+# ghcup (Haskell)
+[ -f "/home/david/.ghcup/env" ] && source "/home/david/.ghcup/env" # ghcup-env
 
 # create openai api key env var
 . "$HOME/.terminal/.bash_openai_api_key"
