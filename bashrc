@@ -151,6 +151,9 @@ cub() {
   printf '\033[2 q'
 }
 
+# set the cursor to block by default
+cub
+
 # tmux
 alias tn='tmux new -s'
 alias ta='tmux a -t'
