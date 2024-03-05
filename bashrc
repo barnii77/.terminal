@@ -141,6 +141,7 @@ alias clera=clear
 alias sl=ls
 alias eixt=exit
 alias cs=clear
+alias l=ls
 
 # cursor
 cul() {
