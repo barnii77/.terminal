@@ -32,7 +32,9 @@ fi
 [ -f "/home/david/.ghcup/env" ] && source "/home/david/.ghcup/env" # ghcup-env
 
 # create openai api key env var
-. "$HOME/.terminal/.bash_openai_api_key"
+if [ -f "$HOME/.terminal/.bash_secrets" ]; then
+  . "$HOME/.terminal/.bash_secrets"
+fi
 
 # Create a tmux session on startup
 if [ -z "$ONROOTSHELLINIT" ]; then
