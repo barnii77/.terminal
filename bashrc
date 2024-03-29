@@ -182,3 +182,7 @@ else
     # If conda env active in parent shell, display it
     PS1="($CONDA_DEFAULT_ENV) $PS1"
 fi
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
