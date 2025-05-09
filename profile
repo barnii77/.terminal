@@ -42,5 +42,6 @@ if [ -z "$ONROOTSHELLINIT" ]; then
   export ONROOTSHELLINIT=1
   # launch with env var inheritance
   # NOTE: will launch with name 0 regardless of specified name
-  tmux -L 0
+  # tmux -L 0
+  # TODO for whatever reason this breaks tmux on my system
 fi

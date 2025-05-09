@@ -88,6 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/usr/local/cuda-12.5/bin:$PATH
 
 # some more ls aliases
 #alias ll='ls -l'
@@ -95,13 +96,6 @@ export PATH=$HOME/.local/bin:$PATH
 #alias l='ls -CF'
 
 alias ssh-add="ssh-add.exe"
-
-# github sync function (add, commit, push)
-gh-sync() {
-    git add --all
-    git commit -m "$1"
-    git push
-}
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -127,7 +121,6 @@ fi
 # neovim
 alias vim=lvim
 alias v=lvim
-# NOTE: add openai api key
 
 alias brew=/home/linuxbrew/.linuxbrew/bin/brew
 
@@ -162,6 +155,8 @@ alias tl='tmux ls'
 alias tk='tmux kill-session -t'
 alias tka='tmux kill-server'
 
+export PATH=$PATH:/usr/local/go/bin
+
 # if no conda env variable available, initialize conda
 if [[ -z "${CONDA_SHLVL}" ]]; then
     # >>> conda initialize >>>
@@ -185,4 +180,7 @@ fi
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
+export PATH=$PATH:$BUN_INSTALL/bin
+
+# zig
+export PATH=$PATH:/usr/local/zig
